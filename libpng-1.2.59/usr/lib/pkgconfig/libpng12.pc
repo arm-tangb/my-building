@@ -1,0 +1,11 @@
+prefix=/home/myzr/my-work/my-rootfs/libpng-1.2.59/../libpng-1.2.59_arm/usr
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include/libpng12
+
+Name: libpng
+Description: Loads and saves PNG files
+Version: 1.2.59
+Libs: -L${libdir} -lpng12
+Libs.private: -lz -lm 
+Cflags: -I${includedir} 
