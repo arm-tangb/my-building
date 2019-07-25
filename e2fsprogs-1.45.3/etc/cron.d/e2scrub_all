@@ -1,0 +1,2 @@
+30 3 * * 0 root test -e /run/systemd/system || SERVICE_MODE=1 /home/myzr/my-work/06_porting/e2fsprogs-1.45.3/../e2fsprogs-1.45.3_arm/usr/lib/e2fsprogs/e2scrub_all_cron
+10 3 * * * root test -e /run/systemd/system || SERVICE_MODE=1 /home/myzr/my-work/06_porting/e2fsprogs-1.45.3/../e2fsprogs-1.45.3_arm/usr/sbin/e2scrub_all -A -r
