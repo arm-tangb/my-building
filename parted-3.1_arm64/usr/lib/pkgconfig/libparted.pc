@@ -1,0 +1,10 @@
+prefix=/home/myzr/my-work/06_porting/parted-3.1/../parted-3.1_arm64/usr
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: libparted
+Description: The GNU Parted disk partitioning shared library
+Version: 3.1
+Libs: -L${libdir} -lparted
+Cflags: -I${includedir}
